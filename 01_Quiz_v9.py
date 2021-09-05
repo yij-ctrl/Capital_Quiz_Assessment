@@ -6,7 +6,7 @@ Version 9 – 09/08/2021
 
 # Importing
 import random
-from capitals_list_v2 import capitals  # Importing the list of capitals from capitals_list
+from Capitals_List_v2 import capitals  # Importing the list of capitals from capitals_list
 
 answered = 0  # This is the number of questions answered
 correct = 0  # This is the number of questions that were answered correctly
@@ -22,7 +22,7 @@ while question != "Q" and question != "q":
     if question == capital:
         correct += 1
         answered += 1
-        print("Correct\n")
+        print("Correct\n")  # Message displayed when the answer is right
         if len(capitals) > 0:
             capitals.pop(get_country)
         if len(capitals) > 0:
@@ -31,15 +31,17 @@ while question != "Q" and question != "q":
             capital = capitals[get_country][0]  # This gets the respective capital for the country in the line above
         else:
             print("Finished")
+            # Displays statistics
             print("\nNumber of questions answered correctly: {}\n"
                   "Number of questions answered: {}\n"
                   "Percentage: {:.2f}% (2 d. p.)".format(correct, answered, correct / answered * 100))
             break
     elif question == "Q" or question == "q":
         if answered == 0:
-            print("Finished")
+            print("Finished")  # Message displayed when all of the questions have been answered
             break
         else:
+            # Displays statistics
             print("\nNumber of questions answered correctly: {}\n"
                   "Number of questions answered: {}\n"
                   "Percentage: {:.2f}% (2 d. p.)".format(correct, answered, correct / answered * 100))
