@@ -1,6 +1,7 @@
 """List with capitals and their respective countries.
 I used https://www.britannica.com/topic/list-of-countries-1993160 on 03/08/2021.
 I also used the Oxford Dictionary of English.
+This version does not have accents, tones and etc. for the capitals.
 Jung Woo Yi
 Version 2 – 06/08/2021
 """
