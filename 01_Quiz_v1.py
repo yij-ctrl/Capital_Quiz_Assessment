@@ -1,4 +1,5 @@
-"""Program that runs a quiz based on capitals.
+"""Program that runs a quiz based on capitals. It asks the user what the capital of a country is, and then displays
+the result.
 Jung Woo Yi
 Version 1 – 02/08/2021
 """
