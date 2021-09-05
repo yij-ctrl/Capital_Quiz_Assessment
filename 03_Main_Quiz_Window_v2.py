@@ -1,6 +1,8 @@
 """Program that has an improved main quiz window for the Capital Quiz game.
+This program is an alternate program for 03_Main_Quiz_Window_v1. The difference is that this program has a space/gap
+between the entry box and the help button.
 Jung Woo Yi
-Version 2 – 29/08/2021
+Version 1 – 29/08/2021
 """
 
 # Importing
