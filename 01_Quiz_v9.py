@@ -34,7 +34,7 @@ while question != "Q" and question != "q":
             # Displays statistics
             print("\nNumber of questions answered correctly: {}\n"
                   "Number of questions answered: {}\n"
-                  "Percentage: {:.2f}% (2 d. p.)".format(correct, answered, correct / answered * 100))
+                  "Percentage: {:.2f}% (2 d. p.)".format(correct, answered, correct / answered))
             break
     elif question == "Q" or question == "q":
         if answered == 0:
@@ -57,5 +57,5 @@ while question != "Q" and question != "q":
             country = capitals[get_country][1]  # This gets the country from the list
             capital = capitals[get_country][0]  # This gets the respective capital for the country in the line above
         elif len(capitals) == 0:
-            print("Finished")
+            print("Finished")  # Message displayed when all of the questions have been answered
             break
