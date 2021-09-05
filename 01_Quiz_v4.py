@@ -8,7 +8,7 @@ Version 4 – 02/08/2021
 # Importing
 import random
 
-# List that contains capitals and countries
+# List that contains capitals and countries  (for testing purposes)
 capitals = [['Wellington', 'New Zealand'], ['Canberra', 'Australia'], ['Washington D.C.', 'the United States of America'],
             ['Seoul', 'the Republic of Korea'], ['Ottawa', 'Canada']]
 
@@ -21,7 +21,7 @@ while question != "Q":
     # Asks the user the capital of the country
     question = input("What is the capital of {}? ".format(country))
     if question == capital:
-        print("Correct")
+        print("Correct")  # Displays a message when the user gets the answer right
         if len(capitals) > 0:
             capitals.pop(get_country)
         if len(capitals) > 0:
@@ -32,4 +32,4 @@ while question != "Q":
             print("Finished")  # Displays a message when the user is finished
             break
     else:
-        print("Incorrect")
+        print("Incorrect")  # Displays a message when the user gets the answer wrong
