@@ -12,5 +12,5 @@ filename = filename + ".txt"  # Adds an extension
 file = open(filename, "w+")
 
 for i in information:
-    file.write(i)
+    file.write(i + ", ")
 file.close()
