@@ -25,10 +25,10 @@ while question != "Q" and question != "q":
             country = capitals[get_country][1]  # This gets the country from the list
             capital = capitals[get_country][0]  # This gets the respective capital for the country in the line above
         else:
-            print("Finished")
+            print("Finished")  # Displays a message to the user when they finish the game
             break
     elif question == "Q" or question == "q":
         break
     else:
         print("Incorrect\n"
-              "The correct answer was {}".format(capital))
+              "The correct answer was {}".format(capital))  # Displays a message telling the user the correct answer
