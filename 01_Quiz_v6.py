@@ -6,7 +6,7 @@ Version 6 – 05/08/2021
 
 # Importing
 import random
-from capitals_list_v1 import capitals  # Importing the list of capitals from capitals_list
+from Capitals_List_v1 import capitals  # Importing the list of capitals from capitals_list
 
 get_country = random.randint(0, len(capitals) - 1)  # This gets a list from within the whole list
 country = capitals[get_country][1]  # This gets the country from the list
