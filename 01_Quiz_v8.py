@@ -6,7 +6,7 @@ Version 8 – 06/08/2021
 
 # Importing
 import random
-from capitals_list_v2 import capitals  # Importing the list of capitals from capitals_list
+from Capitals_List_v2 import capitals  # Importing the list of capitals from capitals_list
 
 answered = 0  # This is the number of questions answered
 correct = 0  # This is the number of questions that were answered correctly
