@@ -34,7 +34,7 @@ while question != "Q" and question != "q":
             # Displays statistics
             print("\nNumber of questions answered correctly: {}\n"
                   "Number of questions answered: {}\n"
-                  "Percentage: {:.2f}% (2 d. p.)".format(correct, answered, correct / answered))
+                  "Percentage: {:.2f}% (2 d. p.)".format(correct, answered, correct / answered * 100))
             break
     elif question == "Q" or question == "q":
         if answered == 0:
@@ -49,7 +49,7 @@ while question != "Q" and question != "q":
     else:
         answered += 1
         print("Incorrect\n"
-              "The correct answer was {}\n".format(capital))
+              "The correct answer was {}\n".format(capital))  # Message displayed when the answer is wrong
         if len(capitals) > 0:
             capitals.pop(get_country)
         if len(capitals) > 0:
