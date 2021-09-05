@@ -20,4 +20,4 @@ question = input("What is the capital of {}? ".format(country))
 if question == capital:
     print("Correct")  # Displays result
 else:
-    print("Incorrect")
+    print("Incorrect")  # Displays result
