@@ -1,4 +1,5 @@
 """Program that runs a quiz based on capitals. It asks the users what the capital of a certain country is.
+This version displays statistics at the end of the game which the previous version did not do.
 Jung Woo Yi
 Version 10 – 09/08/2021
 """
