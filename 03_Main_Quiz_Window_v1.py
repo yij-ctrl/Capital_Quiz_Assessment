@@ -18,10 +18,10 @@ class Quiz:
 
         # Creating and formatting a label for the 'main' window
         self.capital_quiz_label = Label(self.capital_quiz,
-                                             text="Capitals Quiz",
-                                             font=("Arial", "16", "bold"),  # Font formatting
-                                             bg=background_colour,
-                                             padx=10, pady=10)
+                                        text="Capitals Quiz",
+                                        font=("Arial", "16", "bold"),  # Font formatting
+                                        bg=background_colour,
+                                        padx=10, pady=10)
         self.capital_quiz_label.grid(row=0)
 
         # Creating and formatting a label that can display instructions
