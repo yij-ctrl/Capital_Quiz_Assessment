@@ -11,10 +11,12 @@ from functools import partial
 class Quiz:
     def __init__(self):
         background_colour = "light blue"  # Colour formatting
-        
+
+        # Creating and formatting a frame for the 'main' window of the Capital Quiz game
         self.capital_quiz = Frame(width=300, height=300, bg=background_colour, pady=10)  # Window size
         self.capital_quiz.grid()
-        
+
+        # Creating and formatting a label for the 'main' window
         self.capital_quiz_label = Label(self.capital_quiz,
                                              text="Capitals Quiz",
                                              font=("Arial", "16", "bold"),  # Font formatting
