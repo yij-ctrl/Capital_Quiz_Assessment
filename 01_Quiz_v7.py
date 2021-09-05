@@ -6,7 +6,7 @@ Version 7 – 05/08/2021
 
 # Importing
 import random
-from capitals_list_v1 import capitals  # Importing the list of capitals from capitals_list
+from Capitals_List_v1 import capitals  # Importing the list of capitals from capitals_list
 
 answered = 0
 correct = 0
