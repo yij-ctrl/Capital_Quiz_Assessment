@@ -1,4 +1,4 @@
-"""Program that creates a main window/frame for the Capitals Quiz
+"""Program that creates a main window/frame for the Capitals Quiz.
 Jung Woo Yi
 Version 1 – 16/08/2021
 """
