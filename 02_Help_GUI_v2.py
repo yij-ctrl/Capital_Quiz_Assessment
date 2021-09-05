@@ -57,7 +57,8 @@ class Help:
         self.help_text.grid(row=1)
 
         # Creating and formatting a button to exit out of the help window
-        self.cancel_btn = Button(self.help_frame, text="Cancel", width=10, bg=background, font="Arial 10 bold", command=self.close_help)
+        self.cancel_btn = Button(self.help_frame, text="Cancel", width=10, bg=background, font="Arial 10 bold",
+                                 command=self.close_help)
         self.cancel_btn.grid(row=2, pady=10)
 
     def close_help(self):
