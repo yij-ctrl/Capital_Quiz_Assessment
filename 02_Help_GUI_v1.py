@@ -1,4 +1,4 @@
-"""Program that gives extra information for the temperature capital_quiz.
+"""Program that creates a main window/frame for the Capitals Quiz
 Jung Woo Yi
 Version 1 – 16/08/2021
 """
