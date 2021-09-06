@@ -149,7 +149,8 @@ class History:
         self.history_heading = Label(self.history_frame, text="History", font="Arial 14 bold", bg=background)
         self.history_heading.grid(row=0)
 
-        self.history_text = Label(self.history_frame, text="", justify=LEFT, width=40, bg=background, wrap=250, padx=10, pady=10)
+        self.history_text = Label(self.history_frame, text="", justify=LEFT, width=40, bg=background, wrap=250,
+                                  padx=10, pady=10)
         self.history_text.grid(row=1)
 
         # Setting up the frame that will hold the dismiss and export buttons
@@ -161,8 +162,8 @@ class History:
         self.export_button.grid(row=0, column=0)
 
         # Formatting the dismiss button
-        self.dismiss_button = Button(self.dismiss_export_frame, text="Dismiss", width=10, bg=background, font="Arial 12 bold",
-                                     command=partial(self.close_history, partner))
+        self.dismiss_button = Button(self.dismiss_export_frame, text="Dismiss", width=10, bg=background,
+                                     font="Arial 12 bold", command=partial(self.close_history, partner))
         self.dismiss_button.grid(row=0, column=1)
 
     # Exiting out of the 'history' window
