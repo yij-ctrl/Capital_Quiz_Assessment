@@ -53,6 +53,7 @@ class Quiz:
                                   command=self.run_quiz)
         self.next_button.grid(row=4)
 
+        # Button that 'marks' the answer
         self.submit_button = Button(self.capital_quiz_frame,
                                     text="Submit",
                                     font=("Arial", "14"),
