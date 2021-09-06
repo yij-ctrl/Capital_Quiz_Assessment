@@ -120,16 +120,19 @@ class Help:
         self.help_box = Toplevel()
         self.help_box.protocol('WM_DELETE_WINDOW', partial(self.close_help, partner))
 
+        # Creating a frame for the help section
         self.help_frame = Frame(self.help_box, width=300, bg=background)
         self.help_frame.grid()
 
+        # Creating and formatting a heading for the help frame
         self.help_heading = Label(self.help_frame, text="Help", font="Arial 14 bold", bg=background)
         self.help_heading.grid(row=0)
 
         self.help_text = Label(self.help_frame, text="", justify=LEFT, width=40, bg=background, wrap=250)
         self.help_text.grid(row=1)
 
-        self.cancel_btn = Button(self.help_frame, text="Cancel", width=10, bg=background, font="Arial 10 bold",
+        # Creating and formatting a button that can be used to 'delete' the help frame
+        self.cancel_btn = Button(self.help_frame, text="Dismiss", width=10, bg=background, font="Arial 10 bold",
                                  command=partial(self.close_help, partner))
         self.cancel_btn.grid(row=2, pady=10)
 
