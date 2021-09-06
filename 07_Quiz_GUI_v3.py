@@ -122,7 +122,7 @@ class Quiz:
 # Formatting the 'Help' window
 class Help:
     def __init__(self, partner):
-        background = "light green"
+        background = "light green"  # Colour formatting
         partner.help_button.config(state=DISABLED)  # Disabling the "Help" button
 
         self.help_box = Toplevel()
