@@ -212,7 +212,8 @@ class Export:
         self.export_heading.grid(row=0)
 
         # Instructing the user to input a filename
-        self.export_text = Label(self.export_frame, text="Please enter a filename:", justify=LEFT, width=40, bg=background, wrap=250)
+        self.export_text = Label(self.export_frame, text="Please enter a filename:", justify=LEFT, width=40,
+                                 bg=background, wrap=250)
         self.export_text.grid(row=2, pady=10)
 
         # This is the entry box for entering the filename
