@@ -165,8 +165,8 @@ class History:
         self.export_button.grid(row=0, column=0)
 
         # Formatting the dismiss button
-        self.dismiss_button = Button(self.dismiss_export_frame, text="Dismiss", width=10, bg=background, font="Arial 12 bold",
-                                     command=partial(self.close_history, partner))
+        self.dismiss_button = Button(self.dismiss_export_frame, text="Dismiss", width=10, bg=background,
+                                     font="Arial 12 bold", command=partial(self.close_history, partner))
         self.dismiss_button.grid(row=0, column=1)
 
     # Exiting out of the 'history' window
