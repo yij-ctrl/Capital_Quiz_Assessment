@@ -7,7 +7,7 @@ Version 1 – 31/08/2021
 from tkinter import *
 from functools import partial
 import random
-from capitals_list_v2 import capitals  # Importing the list of capitals from capitals_list
+from Capitals_List_v2 import capitals  # Importing the list of capitals from capitals_list
 
 
 class Quiz:
