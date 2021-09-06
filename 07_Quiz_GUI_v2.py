@@ -130,7 +130,7 @@ class Help:
         self.help_text = Label(self.help_frame, text="", justify=LEFT, width=40, bg=background, wrap=250)
         self.help_text.grid(row=1)
 
-        self.cancel_btn = Button(self.help_frame, text="Cancel", width=10, bg=background, font="Arial 10 bold",
+        self.cancel_btn = Button(self.help_frame, text="Dismiss", width=10, bg=background, font="Arial 10 bold",
                                  command=partial(self.close_help, partner))
         self.cancel_btn.grid(row=2, pady=10)
 
