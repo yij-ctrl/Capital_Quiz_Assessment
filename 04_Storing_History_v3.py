@@ -20,14 +20,15 @@ while item != "q":
 inputs_list.reverse()
 print("\nALL ITEMS\n")
 print(inputs_list)  # Prints all items that were inputted
-print("\nLAST 3 ITEMS\n")
 
 # If the length of the list is greater than or equal to three, it will print the most recent three items
 if len(inputs_list) >= 3:
+    print("\nLAST 3 ITEMS\n")
     # Prints last 3 items
     for i in range(0, 3):
         print(inputs_list[i])
 # If the length of the list is less than three, it will print all items in the list
 elif len(inputs_list) < 3:  # If the length of the list is less than three
+    print("\nLAST {} ITEMS\n".format(len(inputs_list)))
     for i in inputs_list:
         print(i)
