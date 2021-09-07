@@ -4,7 +4,7 @@ Version 1 – 31/08/2021
 """
 
 # List that holds information
-information = ['Qwerty', 'Hello', 'Hi', 'Temperature']
+information = ['Qwerty', 'Hello', 'Hi', 'Quiz']
 
 filename = input("Filename: ")  # The user inputs a filename
 file = open(filename, "w+")
