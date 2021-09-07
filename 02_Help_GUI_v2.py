@@ -1,6 +1,6 @@
 """Program that creates a main window/frame for the Capitals Quiz.
-This version adds a frame for the help section where extra information can be displayed. It also removes a redundant
-'import random' piece of code.
+This version adds a frame for the help section where extra information can be displayed and it has a cancel button to
+'delete' the help frame. It also removes a redundant 'import random' piece of code.
 Jung Woo Yi
 Version 2 – 16/08/2021
 """
