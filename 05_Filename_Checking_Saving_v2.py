@@ -1,5 +1,6 @@
 """Program that creates a file from the user's input with information in the list.
-This version adds a '.txt' extension to the filename.
+This version adds a '.txt' extension to the filename. This version also has commas in between the items to separate
+them.
 Jung Woo Yi
 Version 2 – 31/08/2021
 """
