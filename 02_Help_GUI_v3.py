@@ -1,7 +1,6 @@
 """Program that creates a main window/frame for the Capitals Quiz and a help frame that can provide instructions to
 users.
-This version has a functioning 'cancel' button that allows the user to 'delete' the help frame. This version also
-stops users from creating multiple help windows.
+This version stops users from creating multiple help windows.
 Jung Woo Yi
 Version 3 – 16/08/2021
 """
