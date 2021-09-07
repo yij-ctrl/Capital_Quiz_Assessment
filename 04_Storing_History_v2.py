@@ -18,7 +18,7 @@ while item != "q":
 
 inputs_list.reverse()
 print("\nALL ITEMS\n")
-print(inputs_list)  # Prints all 5 items that were inputted
+print(inputs_list)  # Prints all items that were inputted
 print("\nLAST 3 ITEMS\n")
 
 # Prints last 3 items
