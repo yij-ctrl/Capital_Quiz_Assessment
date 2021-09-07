@@ -9,7 +9,7 @@ Version 2 – 31/08/2021
 import re
 
 # List that holds information
-information = ['Qwerty', 'Hello', 'Hi', 'Temperature']
+information = ['Qwerty', 'Hello', 'Hi', 'Quiz']
 
 error = "yes"
 while error == "yes":
