@@ -1,5 +1,6 @@
 """This program/'component' is the assembled quiz.
-This version disables the submit button until the next button is pressed.
+This version disables the submit button until the next button is pressed. This version also displays information for
+users in the help frame.
 Version 4 – 08/09/2021
 """
 
@@ -82,7 +83,10 @@ class Quiz:
     def help(self):
         get_help = Help(self)
         # Displaying text to help users understand the help section
-        get_help.help_text.configure(text="Text Here")
+        get_help.help_text.configure(text="To start the quiz, press the next button. After you answer a question, "
+                                          "press the submit button. After you see your result, you can move onto the "
+                                          "next question by pressing the next button. If you want to see your "
+                                          "statistics, press the history button. Thank you for playing Capitals Quiz!")
 
     get_country = random.randint(0, len(capitals) - 1)  # This gets a list from within the whole list
     country = capitals[get_country][1]  # This gets the country from the list
