@@ -1,6 +1,6 @@
 """Program that integrates the first component (Quiz) into a GUI.
 This version is the first version of a third alternate method for this component. This method has 'green' font when the
-answer is correct and 'red' font when the answer if incorrect. This method also checks the validity of the user's
+answer is correct and 'red' font when the answer is incorrect. This method also checks the validity of the user's
 input.
 Jung Woo Yi
 Version 1 – 08/09/2021
