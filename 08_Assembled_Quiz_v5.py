@@ -60,6 +60,7 @@ class Quiz:
         self.submit_button = Button(self.capital_quiz_frame,
                                     text="Submit",
                                     font=("Arial", "14"),
+                                    state=DISABLED,
                                     command=self.mark_answer)
         self.submit_button.grid(row=5)
 
