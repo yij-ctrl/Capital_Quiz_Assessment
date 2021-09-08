@@ -9,7 +9,7 @@ Version 5 – 08/09/2021
 from tkinter import *
 from functools import partial
 import random
-from Capitals_List_v2 import capitals
+from Capitals_List_v3 import capitals
 import re
 
 
