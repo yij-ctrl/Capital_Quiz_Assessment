@@ -5,6 +5,7 @@ Version 1 – 31/08/2021
 
 # Importing
 from tkinter import *
+import random
 from functools import partial
 
 
