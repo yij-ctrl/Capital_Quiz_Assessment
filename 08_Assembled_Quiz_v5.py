@@ -1,6 +1,7 @@
 """This program/'component' is the assembled quiz.
 This version checks the input of the user for the capitals to check validity and the window size of the 'main' quiz
-frame shouldn't change.
+frame shouldn't change. This version also has the submit button disabled at the start which prevents error messages
+when the submit button is pressed at the beginning.
 Version 5 – 08/09/2021
 """
 
