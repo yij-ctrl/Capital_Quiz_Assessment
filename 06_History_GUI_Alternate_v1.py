@@ -1,6 +1,6 @@
 """Program that creates a frame for the history section using a button that the user can press.
-This is an alternate version of 06_History_GUI_v1. This program does not include 'import random' as it is unnecessary,
-changed the colours of the GUI and capitalised the first letter of 'history' to become 'History'.
+This is an alternate version of 06_History_GUI_v1. This program does not include 'import random' as it is unnecessary
+and changed the colours of the GUI.
 Jung Woo Yi
 Version 1 – 31/08/2021
 """
