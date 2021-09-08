@@ -1,7 +1,6 @@
 """Program that creates a frame for the history section using a button that the user can press.
 This is the second version of an alternate version of 06_History_GUI_v1. This version has the export and dismiss
-buttons' font size as the same size and the width of the buttons are equal. The buttons' frame has a colour that allows
-the white to not be visible.
+buttons' font size as the same size and the width of the buttons are equal.
 Jung Woo Yi
 Version 2 – 31/08/2021
 """
