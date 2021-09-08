@@ -1,4 +1,5 @@
-"""Program that creates a frame for the history section using a button that the user can press.
+"""Program that creates a frame for the history section using a button that the user can press. Multiple history
+frames/windows cannot be open simultaneously as the history button is disabled when the history frame is open.
 Jung Woo Yi
 Version 1 – 31/08/2021
 """
