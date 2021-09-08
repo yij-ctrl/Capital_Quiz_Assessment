@@ -1,6 +1,6 @@
 """Program that integrates the first component into a GUI.
 This is an alternate version of component 7. This version allows the user to press next without the submit button being
-pressed first. This allows the users to skip questions if they want.
+pressed first. This allows the users to skip questions if they want. This version does not have a changing window size.
 Jung Woo Yi
 Version 1 – 31/08/2021
 """
