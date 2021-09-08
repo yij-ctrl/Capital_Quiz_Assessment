@@ -31,6 +31,7 @@ class Quiz:
         # Label where the question will be asked to the user
         self.question_label = Label(self.capital_quiz_frame,
                                     bg=background_colour,
+                                    width=50,
                                     pady=10)
         self.question_label.grid(row=1)
 
