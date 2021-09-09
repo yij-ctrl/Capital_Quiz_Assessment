@@ -99,9 +99,15 @@ class Quiz:
     # Function that generates the next question
     def run_quiz(self):
         global get_country, country, capital
-        get_country = random.randint(0, len(capitals) - 1)  # This gets a list from within the whole list
-        country = capitals[get_country][1]  # This gets the country from the list
-        capital = capitals[get_country][0]  # This gets the respective capital for the country in the line above
+        if len(capitals) > 0:
+            get_country = random.randint(0, len(capitals) - 1)  # This gets a list from within the whole list
+            country = capitals[get_country][1]  # This gets the country from the list
+            capital = capitals[get_country][0]  # This gets the respective capital for the country in the line above
+        elif len(capitals) == 0:
+            self.result_label.configure(text="Finished", fg="black")
+            # When there are no questions left, the next and submit buttons are disabled
+            self.submit_button.config(state=DISABLED)
+            self.next_button.config(state=DISABLED)
 
         # This changes the result_label text to nothing which removes the correct or incorrect message when moving on
         self.result_label.configure(text="", fg="black")
