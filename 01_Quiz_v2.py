@@ -1,7 +1,7 @@
 """Program that runs a quiz based on capitals. It asks the users what the capital of a certain country is.
-This version uses len which means that a set length of the list does not have to be used in the code. This version
-allows the user to quit on the first question without crashing. This version also imports a list of countries and
-capitals which means that more questions can be asked. This version also displays statistics as well.
+This version uses len which means that a set length of the list does not have to be used in the code. This version also
+imports a list of countries and capitals which means that more questions can be asked. This version also displays
+statistics as well.
 Jung Woo Yi
 Version 2 – 09/08/2021
 """
