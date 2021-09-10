@@ -196,8 +196,11 @@ class History:
         self.history_heading = Label(self.history_frame, text="History", font="Arial 14 bold", bg=background)
         self.history_heading.grid(row=0)
 
-        self.history_text = Label(self.history_frame, text="", justify=LEFT, width=40, bg=background, wrap=250,
-                                  padx=10, pady=10)
+        self.history_text = Label(self.history_frame, text="The quiz results appear here (the most recent seven "
+                                                           "results are displayed). If you would like to save "
+                                                           "your results, click the export button and follow the "
+                                                           "instruction(s).",
+                                  justify=LEFT, width=40, bg=background, wrap=250, padx=10, pady=10)
         self.history_text.grid(row=1)
 
         history_string = ""
@@ -207,8 +210,6 @@ class History:
         else:
             for i in quiz_history:
                 history_string += quiz_history[len(quiz_history) - quiz_history.index(i) - 1] + "\n"
-                self.history_text.config(text="The quiz results appear here. If you would like to save your results, "
-                                              "click the export button and follow the instruction(s).")
 
         self.history_results_label = Label(self.history_frame, text=history_string, bg=background, font="Arial 12",
                                            justify=LEFT)
