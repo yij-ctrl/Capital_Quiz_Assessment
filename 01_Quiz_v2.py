@@ -1,36 +1,63 @@
-"""Program that runs a quiz based on capitals. It asks the user what the capital of a country is, and then displays
-the result.
-This version asks the user to answer all of the possible questions in the list.
+"""Program that runs a quiz based on capitals. It asks the users what the capital of a certain country is.
+This version uses len which means that a set length of the list does not have to be used in the code. This version
+allows the user to quit on the first question without crashing. This version also imports a list of countries and
+capitals which means that more questions can be asked. This version also displays statistics as well.
 Jung Woo Yi
-Version 2 – 02/08/2021
+Version 2 – 09/08/2021
 """
 
 # Importing
 import random
+from Capitals_List_v2 import capitals  # Importing the list of capitals from capitals_list
 
-# List that contains capitals and countries
-capitals = [['Wellington', 'New Zealand'], ['Canberra', 'Australia'], ['Washington D.C.', 'United States of America']]
-completed = []
+answered = 0  # This is the number of questions answered
+correct = 0  # This is the number of questions that were answered correctly
 
-get_country = random.randint(0, 2)  # This gets a list from within the whole list
+get_country = random.randint(0, len(capitals) - 1)  # This gets a list from within the whole list
 country = capitals[get_country][1]  # This gets the country from the list
 capital = capitals[get_country][0]  # This gets the respective capital for the country in the line above
-print(country)
-print(capital)
 
 question = ""
-while len(completed) < 3:
+while question != "Q" and question != "q":
     # Asks the user the capital of the country
     question = input("What is the capital of {}? ".format(country))
     if question == capital:
-        print("Correct")  # Displays the result
-        completed.append(country)
-        get_country = random.randint(0, 2)  # This gets a list from within the whole list
-        country = capitals[get_country][1]  # This gets the country from the list
-        capital = capitals[get_country][0]  # This gets the respective capital for the country in the line above
-        while country == [completed]:
-            get_country = random.randint(0, 2)  # This gets a list from within the whole list
+        correct += 1
+        answered += 1
+        print("Correct\n")  # Message displayed when the answer is right
+        if len(capitals) > 0:
+            capitals.pop(get_country)
+        if len(capitals) > 0:
+            get_country = random.randint(0, len(capitals) - 1)  # This gets a list from within the whole list
             country = capitals[get_country][1]  # This gets the country from the list
             capital = capitals[get_country][0]  # This gets the respective capital for the country in the line above
+        else:
+            print("Finished")
+            # Displays statistics
+            print("\nNumber of questions answered correctly: {}\n"
+                  "Number of questions answered: {}\n"
+                  "Percentage: {:.2f}% (2 d. p.)".format(correct, answered, correct / answered * 100))
+            break
+    elif question == "Q" or question == "q":
+        if answered == 0:
+            print("Finished")  # Message displayed when all of the questions have been answered
+            break
+        else:
+            # Displays statistics
+            print("\nNumber of questions answered correctly: {}\n"
+                  "Number of questions answered: {}\n"
+                  "Percentage: {:.2f}% (2 d. p.)".format(correct, answered, correct / answered * 100))
+            break
     else:
-        print("Incorrect")  # Displays the result
+        answered += 1
+        print("Incorrect\n"
+              "The correct answer was {}\n".format(capital))  # Message displayed when the answer is wrong
+        if len(capitals) > 0:
+            capitals.pop(get_country)
+        if len(capitals) > 0:
+            get_country = random.randint(0, len(capitals) - 1)  # This gets a list from within the whole list
+            country = capitals[get_country][1]  # This gets the country from the list
+            capital = capitals[get_country][0]  # This gets the respective capital for the country in the line above
+        elif len(capitals) == 0:
+            print("Finished")  # Message displayed when all of the questions have been answered
+            break
